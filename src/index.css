@@ -1,0 +1,12 @@
+.body {
+  background-image: linear-gradient(#0b0610, #123b6a, #0b0610);
+  background-position: center;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column  ;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

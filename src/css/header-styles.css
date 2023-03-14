@@ -1,0 +1,193 @@
+/* Comienzan fuentes */
+@font-face {
+    font-family: "GoldenAge";
+    src: url(../fonts/Gameplay.ttf);
+}
+
+@font-face {
+    font-family: "Number";
+    src: url(../fonts/numberfont.ttf);
+}
+
+/* Finalizan fuentes */
+
+.fa-cart-shopping {
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(#0b0610, #123b6a, #0b0610);
+    background-position: center;
+    /* max-width: 900px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-icon {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+header .main-title {
+    /* z-index: 2; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-self: center;
+    font-family: "GoldenAge", sans-serif;
+    font-weight: bolder;
+    font-size: 8vw;
+    color: #fcc243;
+    transition: linear 0.1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .main-title:hover {
+    font-size: 8.3vw;
+    color: grey;
+}
+
+header .nav-bar {
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    background-color: rgba(128, 128, 128, 0.224);
+}
+
+header .nav-bar .index-button {
+    /* display: inherit; */
+    float: left;
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+header .nav-bar .index-button .link-index {
+    text-decoration: none;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header .nav-bar .dropdown {
+    /* display: block; */
+    align-items: left;
+}
+
+header .nav-bar .dropdown:hover .drop-content {
+    display: block;
+}
+
+header .nav-bar .dropdown .dropbutton {
+    background-color: transparent;
+    color: white;
+    padding: 8px;
+    gap: 300px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header .nav-bar .drop-content {
+    position: absolute;
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+header .nav-bar .drop-content a {
+    color: black;
+    padding: 12px 16px;
+    align-self: center;
+    text-decoration: none;
+    display: block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header .nav-bar .drop-content a:hover {
+    background-color: grey;
+}
+
+header .cart {
+    display: flex;
+    margin-left: auto;
+}
+
+header .cart .cart-button {
+    align-self: center;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: white;
+    margin-left: auto;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header .cart .cart-button:hover .cart-content {
+    align-self: flex-end;
+    color: black;
+    padding: 12px 16px;
+    margin-top: 30px;
+    text-decoration: none;
+    display: block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header .cart .cart-icon {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+
+header .cart .cart-content {
+    position: absolute;
+    display: none;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+header .cart .cart-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header .logo-title {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(128, 128, 128, 0.224);
+
+}

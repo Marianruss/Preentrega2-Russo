@@ -7,7 +7,7 @@ export const Navbar = () => {
 
     return (
         <header className='header'>
-            <nav className='nav-bar'>
+            <nav className='nav-bar  bg-opacity-100'>
                 <div className="logo-title">
                     <a href="../index.html"><h1 className="main-title">GEEKERS</h1></a>
                 </div>

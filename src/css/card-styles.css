@@ -1,0 +1,10 @@
+.product-photo{
+    background-image: url("/public/images/product-photos/gamepictures/doom.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-card{
+    box-shadow: 5px 5px 5px;
+}

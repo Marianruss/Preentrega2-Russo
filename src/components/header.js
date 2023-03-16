@@ -1,7 +1,7 @@
 import { Games } from "./menus/games"
 import { Colectibles } from "./menus/colectibles"
 import { CartWidget } from "./utils/cartWidget"
-import '../css/header-styles.css'
+import "../css/header-styles.css"
 
 export const Navbar = () => {
 

@@ -1,15 +1,15 @@
-
+import { Link } from "react-router-dom"
 
 export const Games = () => {
 
     return (
         // <---- Menu de Juegos ---->
         <div className="dropdown">
-            <button className="dropbutton">Juegos</button>
+            <Link to="/juegos"><button className="dropbutton">Juegos</button></Link>
             <div className="drop-content">
-                <a href="#">PC</a>
-                <a href="#">PlayStation</a>
-                <a href="#">Xbox</a>
+                <Link to="/juegos/pc">PC</Link>
+                <Link to="/juegos/playstation">PlayStation</Link>
+                <Link to="/juegos/xbox">Xbox</Link>
             </div>
         </div>
 

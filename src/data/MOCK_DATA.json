@@ -1,0 +1,58 @@
+{
+    "games": [
+        {
+            "id": 1,
+            "name": "Doom eternal",
+            "price": 600,
+            "description" : "Abrete pasos a traves de hordas demoníacas",
+            "category": "juegos",
+            "subcategory": "pc",
+            "photo": "../../assets/images/product-photos/gamepictures/doom.jpg"
+        },
+        {
+            "id": 2,
+            "name": "A plague tale",
+            "description" : "a plague tale inocence",
+            "price": 1200,
+            "category": "juegos",
+            "subcategory": "playstation",
+            "photo": "../../assets/images/product-photos/gamepictures/plaguetale.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Sekiro",
+            "description" : "Shadows die twice",
+            "price": 800,
+            "category": "juegos",
+            "subcategory": "xbox",
+            "photo": "../../assets/images/product-photos/gamepictures/sekiro.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Skyrim",
+            "description" : "The elder scrolls V",
+            "price": 550,
+            "category": "juegos",
+            "subcategory": "pc",
+            "photo": "../../assets/images/product-photos/gamepictures/skyrim.jpg"
+        },
+        {
+            "id": 5,
+            "name": "God of War Ragnarok",
+            "price": 4500,
+            "description" : "God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos que tanto echábamos de menos en el juego anterior, en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo.",
+            "category": "juegos",
+            "subcategory": "playstation",
+            "photo": "../../assets/images/product-photos/gamepictures/godofwar.jfif"
+        },
+        {
+            "id": 6,
+            "name": "Street fighter V",
+            "price": 1200,
+            "description" : "Juego de peleas",
+            "category": "juegos",
+            "subcategory": "xbox",
+            "photo": "../../assets/images/product-photos/gamepictures/sfv.jpg"
+        }
+    ]
+}

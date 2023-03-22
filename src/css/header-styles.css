@@ -11,6 +11,10 @@
 
 /* Finalizan fuentes */
 
+a {
+    cursor: pointer;
+}
+
 .fa-cart-shopping {
     color: white;
 }
@@ -62,7 +66,7 @@ header .nav-bar {
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 10px;
-    background-color: rgba(128, 128, 128, 0.224);
+
 }
 
 header .nav-bar .index-button {

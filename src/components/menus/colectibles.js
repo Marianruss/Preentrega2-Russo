@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export const Colectibles = () => {
     // /* <!-- Menú de coleccionables --> */
@@ -5,8 +6,8 @@ export const Colectibles = () => {
         <div className="dropdown">
             <button className="dropbutton">Coleccionables</button>
             <div className="drop-content">
-                <a href="#">Funkos</a>
-                <a href="#">Figuras</a>
+                <Link to="#">Funkos</Link>
+                <Link to="#">Figuras</Link>
             </div>
         </div>)
 

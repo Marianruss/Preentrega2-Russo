@@ -1,21 +1,34 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { useEffect, useState } from 'react'
 
-export const CartWidget = ({cartMessage}) => {
+
+export const CartWidget = () => {
+
+    const [cartQuantity, setcounter] = useState(0)
+
+    const addItem = () => {
+        setcounter(cartQuantity+1)
+        console.log(cartQuantity)
+    }
+
+    // useEffect(() =>{
+    //     setcounter(cartQuantity+1)
+    // })
+
 
     return (
         <div className="cart">
 
-            <button className="cart-button">
+            <button onClick={addItem} className="cart-button">
                 <div className='cart-icon'>
-                    <a href="pages/cart.html">
-                        <FontAwesomeIcon icon={faShoppingCart} />
-                    </a>
-                    <p>0</p>
+
+                    <FontAwesomeIcon icon={faShoppingCart} />
+                    <p>{cartQuantity}</p>
                 </div>
 
                 <div className="cart-content">
-                    <h6>{ cartMessage="No tenes items en tu carrito"}</h6>
+                    <h6>No tenes items en tu carrito</h6>
                 </div>
             </button >
         </div >

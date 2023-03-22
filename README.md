@@ -1,25 +1,26 @@
-## About this project
+### About this project
 
-### This project is about rebuilding an old website made with html & CSS to React
-### https://github.com/Marianruss/Geekers-store
+#### This project is about rebuilding an old website made with html & CSS to React
+#### https://github.com/Marianruss/Geekers-store
 
-
-
-## What is this website about
-
-### This is a videogames and collectibles figures store.
+--------
 
 
+### What is this website about
 
-## What tech im using for this
+#### This is a videogames and collectibles figures store.
 
-### I'm building this site with React JS, tailwind CSS, a little of bootstrap for some components and JSX.
+--------
 
+### What tech im using for this
 
+#### I'm building this site with React JS, tailwind CSS, a little of bootstrap for some components and JSX.
 
-## What i'm expecting from this project
+--------
 
-### I want to build a fully functional e-commerce only for educational purposes and to know better about how websites and webapps works.
+### What i'm expecting from this project
+
+#### I want to build a fully functional e-commerce only for educational purposes and to know better about how websites and webapps works.
 
 
 

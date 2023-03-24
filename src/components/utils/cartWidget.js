@@ -1,36 +1,47 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { useEffect, useState } from 'react'
+import { faShoppingCart, faX } from '@fortawesome/free-solid-svg-icons'
+import { useEffect, useState, useContext } from 'react'
+import { CartContext } from '../../contexts/CartContext'
+
+
 
 
 export const CartWidget = () => {
 
-    const [cartQuantity, setcounter] = useState(0)
-
-    const addItem = () => {
-        setcounter(cartQuantity+1)
-        console.log(cartQuantity)
-    }
-
-    // useEffect(() =>{
-    //     setcounter(cartQuantity+1)
-    // })
-
+    const { cart, quantity, deleteFromCart, emptyCart } = useContext(CartContext)
 
     return (
         <div className="cart">
 
-            <button onClick={addItem} className="cart-button">
+            <span className="cart-button">
                 <div className='cart-icon'>
 
                     <FontAwesomeIcon icon={faShoppingCart} />
-                    <p>{cartQuantity}</p>
+                    <p>{quantity}</p>
                 </div>
 
-                <div className="cart-content">
-                    <h6>No tenes items en tu carrito</h6>
+                <div className="cart-content w-300 h-auto ">
+                    {quantity < 1
+                        ? <h6>No tenes items en tu carrito</h6>
+                        : <div>
+                            {cart.map((item) => (
+                                <div>
+                                    <div key={item.id} className='d-flex justify-between items-center mb-2 h-50' >
+                                        <img src="https://placehold.co/600x400" className='w-25 h-50'></img>
+                                        <h6>{item.name}</h6>
+                                        <small>${item.price}</small>
+                                        <span onClick={() => deleteFromCart(item.id)} className='bg-gray-200 w-20 p-px hover:animate-bounce'><FontAwesomeIcon icon={faX} style={{ color: "black", }} /></span>
+                                    </div>
+                                </div>))}
+                            <div className='d-flex flex-row justify-between mt-20 '>
+                                <button onClick={emptyCart} className="bg-amber-300 hover:bg-grey-500 rounded-xl w-32 p-1 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300 ">Vaciar carrito</button>
+                                <button className="bg-amber-300 hover:bg-grey-500 rounded-xl w-32 p-1 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300">Ir a pagar</button>
+                            </div>
+                        </div>
+                    }
+
                 </div>
-            </button >
+            </span >
         </div >
 
     )

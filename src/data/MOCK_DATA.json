@@ -6,6 +6,7 @@
             "price": 600,
             "description" : "Abrete pasos a traves de hordas demoníacas",
             "category": "juegos",
+            "offer": false,
             "subcategory": "pc",
             "photo": "../../assets/images/product-photos/gamepictures/doom.jpg"
         },
@@ -15,6 +16,7 @@
             "description" : "a plague tale inocence",
             "price": 1200,
             "category": "juegos",
+            "offer": false,
             "subcategory": "playstation",
             "photo": "../../assets/images/product-photos/gamepictures/plaguetale.jpg"
         },
@@ -24,6 +26,7 @@
             "description" : "Shadows die twice",
             "price": 800,
             "category": "juegos",
+            "offer": true,
             "subcategory": "xbox",
             "photo": "../../assets/images/product-photos/gamepictures/sekiro.jpg"
         },
@@ -33,6 +36,7 @@
             "description" : "The elder scrolls V",
             "price": 550,
             "category": "juegos",
+            "offer": true,
             "subcategory": "pc",
             "photo": "../../assets/images/product-photos/gamepictures/skyrim.jpg"
         },
@@ -42,6 +46,7 @@
             "price": 4500,
             "description" : "God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos que tanto echábamos de menos en el juego anterior, en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo.",
             "category": "juegos",
+            "offer": false,
             "subcategory": "playstation",
             "photo": "../../assets/images/product-photos/gamepictures/godofwar.jfif"
         },
@@ -51,8 +56,20 @@
             "price": 1200,
             "description" : "Juego de peleas",
             "category": "juegos",
+            "offer": true,
             "subcategory": "xbox",
             "photo": "../../assets/images/product-photos/gamepictures/sfv.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Resident evil 4",
+            "price": 250,
+            "description" : "Juego de peleas",
+            "category": "juegos",
+            "offer": true,
+            "subcategory": "pc",
+            "photo": "../../assets/images/product-photos/gamepictures/residentevil4.jpg"
         }
+
     ]
 }

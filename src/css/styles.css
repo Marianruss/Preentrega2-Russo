@@ -16,16 +16,17 @@
 header {
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 
 .cart-icon{
   display: flex;
   flex-direction: row;
-  margin-right: 20px;
+  padding-bottom: 2em;
+  margin-top: 12px;
 }
 
 header .main-title {
-  /* z-index: 2; */
   padding-top: 50px;
   padding-bottom: 50px;
   align-self: center;

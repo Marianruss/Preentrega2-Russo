@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faX } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState, useContext } from 'react'
 import { CartContext } from '../../contexts/CartContext'
+import { setLogo } from './functions'
+
 
 
 
@@ -20,7 +22,7 @@ export const CartWidget = () => {
                     <p>{quantity}</p>
                 </div>
 
-                <div className="cart-content w-300 h-auto ">
+                <div className="cart-content w-300 min-h-100 max-h-200  overflow-y-scroll scrollbar scrollbar-thumb-gray-500 scrollbar-rounded-10">
                     {quantity < 1
                         ? <h6>No tenes items en tu carrito</h6>
                         : <div>
@@ -28,7 +30,10 @@ export const CartWidget = () => {
                                 <div>
                                     <div key={item.id} className='d-flex justify-between items-center mb-2 h-50' >
                                         <img src={item.photo} className='w-25 h-50'></img>
-                                        <h6 className='text-xs'>{item.name}</h6>
+                                        <div className='d-flex flex-column items-center gap-y-10'>
+                                            <img className='w-15 h-15' src={`${setLogo(item.subcategory)}`}/>
+                                            <h6 className='text-xs'>{item.name}</h6>
+                                        </div>
                                         <small className='text-xs'>${item.price}</small>
                                         <span onClick={() => deleteFromCart(item.id)} className=' w-30 p-px hover:animate-bounce'><FontAwesomeIcon icon={faX} style={{ color: "black", }} /></span>
                                     </div>

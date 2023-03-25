@@ -33,14 +33,14 @@ export const Product = ({ item }) => {
 
 
         <div>
-            <div className=" h-500 w-250 md:h-500 md:w-250 container self-center " data-aos="zoom-in">
+            <div className="flex items-center h-500 w-250 container items-center self-center my-50 " data-aos="zoom-in">
                 <div>
                     {/* Inicia tarjeta */}
-                    <div className="flex flex-col justify-around mx-2  md:w-250 md:h-500  items-center shadow-2xl shadow-gray-900 content-end items-around">
+                    <div className="flex flex-col justify-around mx-2  md:w-250 md:h-500 shadow-2xl shadow-gray-900">
                         <Link to={`/detail/${item.id}`}><img alt={item.name} src="https://placehold.co/600x400"  className=" m-0 w-250 h-300 object-cover product-photo" /></Link>
-                        <div className="bg-white md:w-80 bg-transparent">
-                            <div className="flex items-center w-250 m-auto flex-column gap-4 justify-between px-4 pt-4 w-150">
-                                <p className='d-flex items-end flex-row w-100 text-white font-card outline-black content-start text-xs'><small>{item.subcategory.toUpperCase()}</small></p>
+                        <div className="flex items-center  justify-around  bg-white  bg-transparent ">
+                            <div className="flex flex-column self-center items-center gap-20 mt-10 md:w-150 md:justify-center ">
+                                <p className='flex items-end flex-row w-200 text-white font-card outline-black content-start text-xs'><small>{item.subcategory.toUpperCase()}</small></p>
 
                                 <p className="text-white font-card outline-black">{item.name}</p>
                                 <p className="text-white font-card">${item.price}</p>

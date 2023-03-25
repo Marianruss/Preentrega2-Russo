@@ -28,9 +28,9 @@ export const CartWidget = () => {
                                 <div>
                                     <div key={item.id} className='d-flex justify-between items-center mb-2 h-50' >
                                         <img src="https://placehold.co/600x400" className='w-25 h-50'></img>
-                                        <h6>{item.name}</h6>
-                                        <small>${item.price}</small>
-                                        <span onClick={() => deleteFromCart(item.id)} className='bg-gray-200 w-20 p-px hover:animate-bounce'><FontAwesomeIcon icon={faX} style={{ color: "black", }} /></span>
+                                        <h6 className='text-xs'>{item.name}</h6>
+                                        <small className='text-xs'>${item.price}</small>
+                                        <span onClick={() => deleteFromCart(item.id)} className=' w-30 p-px hover:animate-bounce'><FontAwesomeIcon icon={faX} style={{ color: "black", }} /></span>
                                     </div>
                                 </div>))}
                             <div className='d-flex flex-row justify-between mt-20 '>

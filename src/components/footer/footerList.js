@@ -4,7 +4,7 @@ export const FooterList = () => {
 
 
     return (
-        <div className="grid grid-cols-2 md:flex md:flex-row gap-100 mt-20 mb-40 ml-40 gap-y-20 md:ml-80 text-white font-card">
+        <div className="grid grid-cols-2 mx-50 mb-20 md:flex md:flex-row gap-100 mt-20 mb-40 ml-40 gap-y-20 md:ml-80 text-white font-card">
             <ul>
                 <li style={{"listStyleImage":"url(/images/icons/joystick-16.ico)"}}>Juegos</li>
                 <li>Playstation</li>

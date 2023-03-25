@@ -8,7 +8,7 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
-            "photo": "../../assets/images/product-photos/gamepictures/doom.jpg"
+            "photo": "/images/product-photos/gamepictures/doom.jpg"
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "../../assets/images/product-photos/gamepictures/plaguetale.jpg"
+            "photo": "/images/product-photos/gamepictures/plaguetale.jpg"
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "xbox",
-            "photo": "../../assets/images/product-photos/gamepictures/sekiro.jpg"
+            "photo": "/images/product-photos/gamepictures/sekiro.jpg"
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "pc",
-            "photo": "../../assets/images/product-photos/gamepictures/skyrim.jpg"
+            "photo": "/images/product-photos/gamepictures/skyrim.jpg"
         },
         {
             "id": 5,
@@ -48,7 +48,7 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "../../assets/images/product-photos/gamepictures/godofwar.jfif"
+            "photo": "/images/product-photos/gamepictures/godofwar.jfif"
         },
         {
             "id": 6,
@@ -58,7 +58,7 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "xbox",
-            "photo": "../../assets/images/product-photos/gamepictures/sfv.jpg"
+            "photo": "/images/product-photos/gamepictures/sfv.webp"
         },
         {
             "id": 7,
@@ -68,7 +68,7 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "pc",
-            "photo": "../../assets/images/product-photos/gamepictures/residentevil4.jpg"
+            "photo": "/images/product-photos/gamepictures/residentevil4.jpg"
         }
 
     ]

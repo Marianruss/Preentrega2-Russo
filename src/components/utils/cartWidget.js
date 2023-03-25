@@ -27,7 +27,7 @@ export const CartWidget = () => {
                             {cart.map((item) => (
                                 <div>
                                     <div key={item.id} className='d-flex justify-between items-center mb-2 h-50' >
-                                        <img src="https://placehold.co/600x400" className='w-25 h-50'></img>
+                                        <img src={item.photo} className='w-25 h-50'></img>
                                         <h6 className='text-xs'>{item.name}</h6>
                                         <small className='text-xs'>${item.price}</small>
                                         <span onClick={() => deleteFromCart(item.id)} className=' w-30 p-px hover:animate-bounce'><FontAwesomeIcon icon={faX} style={{ color: "black", }} /></span>

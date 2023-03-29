@@ -16,7 +16,6 @@ export const ItemListContainer = () => {
     const { category, subcategory } = useParams()
 
     useEffect(() => {
-        <Loader style={{ display: "block" }} />
         productData(MOCK_DATA)
 
             .then((res) => {

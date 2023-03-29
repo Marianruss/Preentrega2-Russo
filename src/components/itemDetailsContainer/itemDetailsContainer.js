@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { productData } from "../utils/functions"
 import { ProductDetail } from "./individualItemDetail"
 import MOCK_DATA from "../../data/MOCK_DATA.json"
+import { Loader } from "../utils/loader"
 
 
 export const ItemDetails = () => {
@@ -34,7 +35,7 @@ export const ItemDetails = () => {
         <div>
             {
             loading 
-            ? <h2>Cargando</h2>
+            ? <Loader/>
             :  <ProductDetail item={item}/>
         }
         </div>

@@ -14,8 +14,10 @@ export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([])
     const { category, subcategory } = useParams()
+    const [loading, setLoading] = useState(false)
 
     useEffect(() => {
+        setLoading(true)
         productData(MOCK_DATA)
 
             .then((res) => {
@@ -34,23 +36,26 @@ export const ItemListContainer = () => {
                     setProducts(res)
                 }
             })
-            .catch((err) => {
-                console.log(err)
+            .finally(() => {
+                setLoading(false)
             })
-    }, [category,subcategory])
-
+    }, [category, subcategory])
 
 
 
     return (
         <div>
-            <div className=' grid grid-cols-1 gap-y-10  md:grid-cols-2 mt-10'>
+            {loading ? <Loader />
+                : <div className=' grid grid-cols-1 gap-y-10  md:grid-cols-2 mt-10'>
+                    {products.map((prod) => <Product key={prod.id} item={prod} />)}
+                    <div className="grid grid-cols-1 gap-y-10  md:grid-cols-1 mb-10">
 
-                {products.map((prod) => <Product key={prod.id} item={prod} />)}
-            </div>
-            <div className="grid grid-cols-1 gap-y-10  md:grid-cols-1 mb-10">
-                <Pager />
-            </div>
+                    </div>
+
+                </div>}
         </div>
     )
+
+
+
 }

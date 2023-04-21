@@ -39,10 +39,10 @@ export const Ofertas = () => {
 
                 {offers.map((prod) => < Carousel.Item key={prod.id} interval={2000} >
                     <div className="d-flex flex-row justify-around  ">
-                        <Product  item={prod}/>
+                        <Product item={prod} />
                     </div> </Carousel.Item>)}
-        </Carousel>
+            </Carousel>
         </div >
     );
-    
+
 }

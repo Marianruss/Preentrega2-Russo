@@ -9,17 +9,19 @@ export const Cart = ({ children }) => {
 
     const [cart, setCart] = useState([])
     const [quantity, setQuantity] = useState(0)
-    console.log(cart)
-    console.log(quantity)
+    const [total,setTotal] = useState(0)
 
-    const deleteFromCart = (id) => {
+    const deleteFromCart = (id,price) => {
         setCart(cart.filter((prod) => prod.id !== id))
         setQuantity(quantity - 1)
+        setTotal(total - price)
+        console.log(total)
     }
 
     const emptyCart = () =>{
         setCart([])
         setQuantity(0)
+        setTotal(0)
     }
 
 
@@ -31,8 +33,11 @@ export const Cart = ({ children }) => {
         }
         else {
             alertify.success('Item agregado al carrito');
+            setTotal(total + item.price)
             setCart([...cart, item])
             setQuantity(quantity + 1)
+            
+            console.log(total)
             console.log(quantity)
         }
     }
@@ -44,7 +49,8 @@ export const Cart = ({ children }) => {
             cart,
             quantity,
             deleteFromCart,
-            emptyCart
+            emptyCart,
+            total
         }}>
             {children}
         </CartContext.Provider>

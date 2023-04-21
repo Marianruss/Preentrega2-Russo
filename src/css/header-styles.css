@@ -150,6 +150,7 @@ header .cart .cart-button {
 header .cart .cart-button:hover .cart-content {
     align-self: flex-end;
     color: black;
+    width: 400px;
     background-color: rgb(176, 176, 176);
     padding: 12px 16px;
     margin-top: 30px;
@@ -195,4 +196,11 @@ header .logo-title {
     flex-direction: row;
     background-color: rgba(128, 128, 128, 0.224);
 
+}
+
+@media (min-width:374px )  {
+    
+    header .cart .cart-button:hover .cart-content {
+        width: 350px;
+    }
 }

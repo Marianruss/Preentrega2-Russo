@@ -45,7 +45,7 @@ export const Product = ({ item }) => {
                         <div className="flex items-center  justify-around  bg-white  bg-transparent ">
                             <div className="flex flex-column self-center items-center gap-20 mt-10 md:w-150 md:justify-center ">
                                 <img className='w-20 h-20' src={`${setLogo(item.subcategory)}`} />
-                                <p className="text-white font-card outline-black">{item.name}</p>
+                                <p className="text-white text-l font-card outline-black">{item.name}</p>
                                 <p className="text-white font-card">${item.price}</p>
                                 <button onClick={handleAgregar} className="bg-amber-300 hover:bg-grey-500 rounded-xl w-32 p-1 mb-10 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300 ">Añadir al carro</button>
                             </div>

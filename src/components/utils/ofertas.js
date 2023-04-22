@@ -37,12 +37,12 @@ export const Ofertas = () => {
             <h2 className="novedades m-w-900 mb-20 text-2xl mt-5">Ofertas de la semana</h2>
             <Carousel indicators={false} className='mb-20 m-w-900'>
 
-                {offers.map((prod) => < Carousel.Item key={prod.id} interval={2000} >
-                    <div className="d-flex flex-row justify-around  ">
-                        <Product  item={prod}/>
+                {offers.map((prod) => < Carousel.Item key={prod.id} interval={4000} >
+                    <div className="d-flex flex-row justify-around">
+                        <Product item={prod} />
                     </div> </Carousel.Item>)}
-        </Carousel>
+            </Carousel>
         </div >
     );
-    
+
 }

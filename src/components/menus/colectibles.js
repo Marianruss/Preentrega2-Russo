@@ -4,10 +4,10 @@ export const Colectibles = () => {
     // /* <!-- Menú de coleccionables --> */
     return (
         <div className="dropdown">
-            <button className="dropbutton">Coleccionables</button>
+            <Link to={"/coleccionables"}> <button className="dropbutton">Coleccionables</button></Link>
             <div className="drop-content">
-                <Link to="#">Funkos</Link>
-                <Link to="#">Figuras</Link>
+                <Link to="/coleccionables/funkos">Funkos</Link>
+                <Link to="/coleccionables/figuras">Figuras</Link>
             </div>
         </div>)
 

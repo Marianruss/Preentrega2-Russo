@@ -4,7 +4,8 @@
             "id": 1,
             "name": "Doom eternal",
             "price": 600,
-            "description" : "Abrete pasos a traves de hordas demoníacas",
+            "new": false,
+            "description" : "Los ejércitos del infierno han invadido la Tierra. Conviértete en el Slayer en una campaña épica para un jugador y cruza dimensiones para impedir la destrucción definitiva de la humanidad. No le tienen miedo a nada... salvo a ti.",
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
@@ -13,8 +14,9 @@
         {
             "id": 2,
             "name": "A plague tale",
-            "description" : "a plague tale inocence",
+            "description" : "Sigue la lúgubre historia de la joven Amicia y su hermano pequeño Hugo en un viaje por los momentos más oscuros de la historia.",
             "price": 1200,
+            "new": false,
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
@@ -23,8 +25,9 @@
         {
             "id": 3,
             "name": "Sekiro",
-            "description" : "Shadows die twice",
+            "description" : "Forja tu propio camino en busca de venganza en la galardonada aventura del desarrollador From Software, creadores de Bloodborne y de la serie Dark Souls. Véngate. Restituye tu honor. Mata con ingenio.",
             "price": 800,
+            "new": false,
             "category": "juegos",
             "offer": true,
             "subcategory": "xbox",
@@ -33,8 +36,9 @@
         {
             "id": 4,
             "name": "Skyrim",
-            "description" : "The elder scrolls V",
+            "description" : "Skyrim Special Edition, ganador de más de 200 premios al Juego del año, da vida a la fantasía épica con un nivel de detalle asombroso. La Special Edition incluye el juego aclamado por la crítica y los complementos, así como nuevas características: gráficos y efectos renovados, rayos crepusculares",
             "price": 550,
+            "new": false,
             "category": "juegos",
             "offer": true,
             "subcategory": "pc",
@@ -44,6 +48,7 @@
             "id": 5,
             "name": "God of War Ragnarok",
             "price": 4500,
+            "new": true,
             "description" : "God of War: Ragnarok es la secuela del aclamado God of War (2018) y presenta un videojuego de acción y aventura de gran factura donde Kratos y Atreus deben viajar a cada uno de los Nueve Reinos que tanto echábamos de menos en el juego anterior, en busca de respuestas mientras las fuerzas asgardianas se preparan para la batalla profetizada que supondrá el fin del mundo.",
             "category": "juegos",
             "offer": false,
@@ -54,7 +59,8 @@
             "id": 6,
             "name": "Street fighter V",
             "price": 1200,
-            "description" : "Juego de peleas",
+            "new": false,
+            "description" : "Experimenta la intensidad de la batalla cara a cara en Street Fighter® V.Elige entre 16 personajes icónicos, cada uno con su propia historia personal y desafíos de entrenamiento únicos, y luego lucha contra amigos en línea o sin conexión con una sólida variedad de opciones para cada partida.",
             "category": "juegos",
             "offer": true,
             "subcategory": "xbox",
@@ -64,12 +70,459 @@
             "id": 7,
             "name": "Resident evil 4",
             "price": 250,
-            "description" : "Juego de peleas",
+            "new": false,
+            "description" : "La supervivencia es solo el comienzo. A seis años del desastre biológico en Raccoon City, Leon S. Kennedy, uno de los sobrevivientes, rastreó a la hija secuestrada del presidente hasta una aldea europea aislada, donde algo terrible le ha ocurrido a los lugareños.",
             "category": "juegos",
             "offer": true,
             "subcategory": "pc",
             "photo": "/images/product-photos/gamepictures/residentevil4.jpg"
+        },{
+            "id": 8,
+            "name": "The Witcher 3",
+            "price": 550,
+            "new": false,
+            "description" : "Eres Geralt de Rivia, cazador de monstruos. En un continente devastado por la guerra e infestado de criaturas, tu misión es encontrar a Ciri, la niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "pc",
+            "photo": "/images/product-photos/gamepictures/witcher3.jpg"
+        },{
+            "id": 9,
+            "name": "Mortal Kombat 11",
+            "price": 600,
+            "new": false,
+            "description" : "Mortal Kombat 11 es la nueva entrega de la violenta y salvaje saga de lucha de NetherRealm Studios para consolas y PC. Se trata de la undécima secuela de una serie de títulos de combate y peleas de marcada estructura 2D, que en esta ocasión, además de añadir los mejores gráficos de la serie y el gore más descarnado en los llamados Fatality, presentará luchadores clásicos y nuevos, más modos de juego y una oferta online que quiere marcar un antes y un después en los eSports.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "playstation",
+            "photo": "/images/product-photos/gamepictures/mk11.jpg"
+        },{
+            "id": 10,
+            "name": "Metro exodus",
+            "price": 1200,
+            "new": false,
+            "description" : "Metro Exodus es la continuación de la saga Metro, una serie de videojuegos de acción y supervivencia ambientados en un mundo apocalíptico localizado en Rusia y la Europa del Este. Esta secuela, a cargo de Deep Silver y 4A Games, va un paso más allá de la habitual jugabilidad de los anteriores videojuegos, y mostrará espacios más abiertos, nuevas mecánicas jugables y un apartado audiovisual más ambicioso y detallado.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "playstation",
+            "photo": "/images/product-photos/gamepictures/metroexodus.jpg"
+        },{
+            "id": 11,
+            "name": "Halo collection",
+            "price": 2500,
+            "new": false,
+            "description" : "Halo: The Master Chief Collection es un recopilatorio de la saga Halo para Xbox One que incluye las cuatro entregas numeradas de la saga completamente remasterizadas a 1080p. El primer Halo es la edición aniversario lanzada para Xbox 360, ahora remasterizado. El segundo es la Halo 2 Anniversary Edition, un remake del título de 2004, mientras que Halo 3 y Halo 4 son las versiones de Xbox 360 con un lavado de cara gráfico para aprovechar la potencia de Xbox One",
+            "category": "juegos",
+            "offer": true,
+            "subcategory": "xbox",
+            "photo": "/images/product-photos/gamepictures/halo.jpg"
+        },{
+            "id": 12,
+            "name": "Metal Gear Solid V",
+            "price": 750,
+            "new": false,
+            "description" : "Metal Gear Solid continúa con una nueva entrega posterior a Metal Gear Solid: Peace Walker y anterior a los sucesos de los dos primeros Metal Gear y toda la subsaga Solid posterior. Big Boss, el 'padre' de Solid Snake, se despierta nueve años después de los sucesos de Ground Zeroes y tendrá que acabar con sus enemigos en Afganistán y África, con un enorme mundo abierto a nuestros pies.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "xbox",
+            "photo": "/images/product-photos/gamepictures/mgsv.jpg"
+        },{
+            "id": 13,
+            "name": "Assassin's Creed Valhalla",
+            "price": 3500,
+            "new": true,
+            "description" : "Assassin’s Creed Valhalla es la nueva entrega de Assassin’s Creed de Ubisoft, la saga de acción y aventuras en mundo abierto más famosa de la desarrolladora de videojuegos. En esta ocasión, y siguiendo con los toques RPG de las últimas entregas, viajaremos al siglo IX después de Cristo, llegando a una Gran Bretaña invadida por vikingos. ",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "pc",
+            "photo": "/images/product-photos/gamepictures/acvalhalla.jpg"
+        },{
+            "id": 14,
+            "name": "Batman Arkham's Knight",
+            "price": 630,
+            "new": false,
+            "description" : "Batman: Arkham Knight es un nuevo videojuego de Batman que cerrará la saga Arkham del personaje de DC Comics en los videojuegos. Desarrollado por los creadores de Arkham Asylum y Arkham City, el título tiene lugar un año después de los sucesos de éste, enfrentándose Batman de nuevo a un grupo de villanos, liderados por el misterioso Arkham Knight. Volveremos a contar con libertad para explorar Gotham, y esta vez podremos conducir el Batmóvil.",
+            "category": "juegos",
+            "offer": true,
+            "subcategory": "playstation",
+            "photo": "/images/product-photos/gamepictures/arkhamknight.jpg"
+        },{
+            "id": 15,
+            "name": "Marvel Avengers",
+            "price": 1450,
+            "new": false,
+            "description" : "Marvel's Avengers es un videojuego de acción y aventura para un jugador con opciones de cooperativo online que nos invitará a encarnar a los héroes más poderosos de la Tierra. Desarrollado por Square Enix, Crystal Dynamics y Eidos Montreal, el título nos llevará a encarnar a los célebres personajes de Marvel como Thor, Capitán América, Hulk, Iron Man o la Viuda Negra a lo largo y ancho de un mundo en continua expansión.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "xbox",
+            "photo": "/images/product-photos/gamepictures/avengers.jpg"
+        },{
+            "id": 16,
+            "name": "Battlefield V",
+            "price": 890,
+            "new": false,
+            "description" : "Battlefield V es la nueva secuela de la saga de acción en primera persona de DICE y EA. En esta ocasión, el estudio y la editora nos trasladan a la Segunda Guerra Mundial, ahondando en ideas como la hermandad entre soldados, añadiendo nuevos modos de juego, mejorando los gráficos y apostando claramente por mayor diversión, complejidad y sentido del espectáculo.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "pc",
+            "photo": "/images/product-photos/gamepictures/battlefield5.jpg"
+        },{
+            "id": 17,
+            "name": "Battlefield 2042",
+            "price": 2350,
+            "new": false,
+            "description" : "Battlefield 2042 es la nueva entrega de la saga de acción en primera persona. Hablamos de un título totalmente multijugador con tres experiencias diferentes entre las que destaca la Guerra Total con partidas con hasta 128 jugadores (en PC y en la actual generación) en los mapas más grandes vistos hasta ahora en la saga con un montón de factores que pueden afectar al campo de batalla. Ambientado en el futuro cercano, nos trasladará a un escenario en el que el cambio climático ha hecho estragos.",
+            "category": "juegos",
+            "offer": true,
+            "subcategory": "playstation",
+            "photo": "/images/product-photos/gamepictures/bf2042.jpg"
+        },{
+            "id": 18,
+            "name": "Brutal Legend",
+            "price": 650,
+            "new": false,
+            "description" : "Brütal Legend, un juego de acción creado por Tim Schafer. Eddie Riggs es un pipa elegido por los dioses del rock, interpretado por Jack Black, que deberá luchar en un fantástico mundo de heavy metal para salvar a la humanidad y cargarse a los demonios... con la única ayuda de su hacha, su guitarra Clementine y un ejército de metaleros.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "xbox",
+            "photo": "/images/product-photos/gamepictures/brutallegend.jpg"
+        },{
+            "id": 19,
+            "name": "Control",
+            "price": 950,
+            "new": false,
+            "description" : "Control es el nuevo juego de acción en tercera persona de Remedy Entertainment, responsables de títulos como Max Payne, Alan Wake y Quantum Break. Desarrollado gracias al apoyo de 505 Games.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "pc",
+            "photo": "/images/product-photos/gamepictures/control.jpg"
+        },{
+            "id": 20,
+            "name": "Crash N'sane Trilogy",
+            "price": 650,
+            "new": false,
+            "description" : "Crash Bandicoot N Sane Trilogy es un videojuego de plataformas en 3D, desarrollado por el estudio Vicarious Visions y producido y distribuido por activision como videojuego exclusivo de PS4, hasta el momento. Se trata de una remasterización de los tres primeros juegos de la serie Crash Bandicoot aparecidos en la consola PlayStation a finales de los 90 y desarrollados por Naughty Dog, pero mejorados con gráficos totalmente renovados, cambios estéticos y ciertas novedades jugables.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "xbox",
+            "photo": "/images/product-photos/gamepictures/crash3.jpg"
+        },{
+            "id": 21,
+            "name": "Death Stranding",
+            "price": 2320,
+            "new": false,
+            "description" : "Death Stranding es un título de acción, aventura y exploración en mundo abierto de ambientación postapocalíptica. Se trata del nuevo videojuego de Hideo Kojima, padre de Metal Gear y Snatcher, una enigmática obra que se define como el primer juego de su género, ya que incluye una serie de mecánicas, detalles y aspectos que lo alejan de otros videojuegos similares.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "playstation",
+            "photo": "/images/product-photos/gamepictures/deathstranding.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Spiderman Miles Morales",
+            "price": 6500,
+            "new": false,
+            "description": "Spider-Man: Miles Morales es el nuevo juego de acción y aventura en mundo abierto de Insomniac Games, que cuenta como título independiente de Marvel Spider-Man para PlayStation 4 aunque ofrece su misma fórmula jugable. De esta forma, encarnando a Morales y no a Peter Parker, viajaremos por una ciudad de Nueva York mejor recreada y detallada, combatiendo el crimen y luchando contra los habituales villanos de los cómics de Marvel.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "pc",
+            "photo": "/images/product-photos/gamepictures/spiderman.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Horizon Forbidden west",
+            "price": 4300,
+            "new": true,
+            "description": "Horizon 2: Forbbiden West es la segunda parte de Horizon: Zero Dawn. Auspiciado por Sony, y como una de las nuevas sagas que han demostrado su poder y presencia en la sobremesa, nos narrará una épica historia de ciencia ficción postapocalíptica en la que la humanidad intenta sobrevivir tras la aparición de una serie de máquinas y robots que han sustituido a los seres vivos como especie dominante en la Tierra.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "playstation",
+            "photo": "/images/product-photos/gamepictures/horizon.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Elden Ring",
+            "price": 6000,
+            "new": false,
+            "description": "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
+            "category": "juegos",
+            "offer": false,
+            "subcategory": "xbox",
+            "photo": "/images/product-photos/gamepictures/eldenring.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Funko-pop Azula",
+            "price": 1000,
+            "new": true,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkoazula.jpg"
+        },
+        {
+            "id": 26,
+            "name": "Funko-pop Andromeda",
+            "price": 1750,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkoandromeda.jpg"
+        },
+        {
+            "id": 27,
+            "name": "Funko-pop Batman",
+            "price": 1500,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkobatman.jpg"
+        },
+        {
+            "id": 28,
+            "name": "Funko-pop Boruto",
+            "price": 1300,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkoboruto.jpg"
+        },
+        {
+            "id": 29,
+            "name": "Funko-pop Capitan America",
+            "price": 1200,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkocapitan.jpg"
+        },
+        {
+            "id": 30,
+            "name": "Funko-pop Cell",
+            "price": 1800,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkocell.jpg"
+        },
+        {
+            "id": 31,
+            "name": "Funko-pop Deadpool",
+            "price": 1150,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkodeadpool.png"
+        },
+        {
+            "id": 32,
+            "name": "Funko-pop Geralt",
+            "price": 1900,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkogeralt.jpg"
+        },
+        {
+            "id": 33,
+            "name": "Funko-pop Superman",
+            "price": 950,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": true,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkosuperman.jpg"
+        },
+        {
+            "id": 34,
+            "name": "Funko-pop Gollum",
+            "price": 650,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": true,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkogollum.jpg"
+        },
+        {
+            "id": 35,
+            "name": "Funko-pop Vegeta",
+            "price": 400,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": true,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkovegeta.jpg"
+        },
+        {
+            "id": 36,
+            "name": "Funko-pop Harry Potter",
+            "price": 1450,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "funkos",
+            "photo": "/images/product-photos/funkopictures/funkoharry.jpg"
+        },
+        {
+            "id": 37,
+            "name": "Figura Goku niño",
+            "price": 8000,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": true,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/goku-niño.jpg"
+        },
+        {
+            "id": 38,
+            "name": "Figura Cell Perfecto",
+            "price": 14450,
+            "new": true,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/cell.webp"
+        },
+        {
+            "id": 39,
+            "name": "Figura Freezer",
+            "price": 10500,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/freezer.webp"
+        },
+        {
+            "id": 40,
+            "name": "Gohan SSJ2",
+            "price": 13000,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/gohanssj2.jpg"
+        },
+        {
+            "id": 41,
+            "name": "Figura Goku SSJ",
+            "price": 12000,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/gokussj1.webp"
+        },
+        {
+            "id": 42,
+            "name": "Figura Krillin",
+            "price": 7500,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": true,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/krillin.webp"
+        },
+        {
+            "id": 43,
+            "name": "Figura Deku",
+            "price": 15000,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": true,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/midoriya.webp"
+        },
+        {
+            "id": 44,
+            "name": "Figura Naruto",
+            "price": 11000,
+            "new": true,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/naruto.jpg"
+        },
+        {
+            "id": 45,
+            "name": "Figura Naruto Adulto",
+            "price": 18000,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/narutoadulto.webp"
+        },
+        {
+            "id": 46,
+            "name": "Figura Sauron",
+            "price": 9200,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": true,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/sauron.jpg"
+        },
+        {
+            "id": 47,
+            "name": "Figura ShenLong",
+            "price": 15000,
+            "new": true,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/shenlong.jpg"
+        },
+        {
+            "id": 48,
+            "name": "Figura Vegeta final flash",
+            "price": 14500,
+            "new": false,
+            "description": "",
+            "category": "coleccionables",
+            "offer": false,
+            "subcategory": "figuras",
+            "photo": "/images/product-photos/figurepictures/vegeta.jpg"
         }
+        
+
+
+
+
+
+
+
+
 
     ]
 }

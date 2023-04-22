@@ -1,7 +1,7 @@
 import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-export const ModalWin = ({title,message,test}) => {
+export const ModalWin = ({title,message,factura}) => {
 
     return (
         <div>
@@ -17,7 +17,7 @@ export const ModalWin = ({title,message,test}) => {
                     <Link to={"/"}> <Button className='bg-amber-300 hover:bg-grey-500 rounded-xl w-32  p-1 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300"'>
                         Ir al inicio
                     </Button> </Link>
-                    <Button className='text-bg-amber-300 hover:bg-grey-500 rounded-xl w-32  p-1 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300'>{test}</Button>
+                    <Button className='bg-amber-300 hover:bg-grey-500 rounded-xl w-32  p-1 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300'>{factura}</Button>
                 </Modal.Footer>
             </Modal>
         </div>

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     prod: {
         marginLeft: "20px",
-        marginTop:"20px"
+        marginTop: "20px"
     }
 });
 
@@ -29,15 +29,14 @@ const ordenCompra = () => {
 }
 const orderNumber = ordenCompra()
 
-// Create Document Component
-export const MyDocument = () => {
+
+export const GenerateReceipt = () => {
 
     const { cart } = useContext(CartContext)
-    console.log(cart)
-
     return (
-        <PDFViewer>
-            <Document>
+
+        <div>
+            <PDFDownloadLink className="p-2" document={<Document>
                 <Page size="A4" style={styles.page}>
                     <View style={styles.section}>
                         <Text style={styles.title}>
@@ -52,19 +51,8 @@ export const MyDocument = () => {
 
                     </View>
                 </Page>
-            </Document>
-        </PDFViewer>
-    )
+            </Document>} fileName="Factura de compra.pdf">
+                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Descargar Factura')}
+            </PDFDownloadLink>
+        </div>)
 }
-
-
-export const Test = () => (
-    <PDFViewer>
-        <MyDocument />
-    </PDFViewer>
-    // <div>
-    //     <PDFDownloadLink className="p-2" document={<MyDocument />} fileName="Factura de compra.pdf">
-    //         {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Descargar Factura')}
-    //     </PDFDownloadLink>
-    // </div>
-)

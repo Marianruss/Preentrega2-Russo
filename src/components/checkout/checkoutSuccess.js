@@ -7,12 +7,9 @@ import { pdf } from "@react-pdf/renderer"
 import { GenerateReceipt } from "./receipt/generatePdf"
 
 export const PurchaseFinished = () =>{
-
-
     
     return (
         
         <ModalWin title={"Compra finalizada con exito"} message={"Gracias por tu compra"} factura={<GenerateReceipt/>}/>
-        
     )
 }

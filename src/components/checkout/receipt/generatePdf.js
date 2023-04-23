@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { PDFDownloadLink, Page, Text, Image, View, Document, StyleSheet, PDFViewer } from "@react-pdf/renderer";
 import { CartContext } from "../../../contexts/CartContext"
 import { DataContext } from "../../../contexts/DataContext";
@@ -69,12 +69,11 @@ export const GenerateReceipt = (orderNumber) => {
     const lineJump = "\n\n"
 
     let ordenCompra = renewOrderNumber()
-    
 
     return (
 
         <div>
-            <PDFDownloadLink className="text-white" fileName={`Factura orden #${ordenCompra}`} document={<Document >
+            <PDFDownloadLink className="text-white p-2" fileName={`Factura orden #${ordenCompra}`} document={<Document >
                 <Page size="A4" style={styles.page}>
 
                     <Text style={styles.title}>

@@ -1,4 +1,4 @@
-import { Ofertas } from "../utils/ofertas";
+import { Ofertas } from "./ofertas"
 import { useState } from "react"
 import { useEffect } from "react"
 import MOCK_DATA from "../../data/MOCK_DATA.json"
@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom"
 import { New } from "./newsItem";
 import Carousel from 'react-bootstrap/Carousel';
 import { productData } from "../utils/functions";
+import { Loader } from "../utils/loader";
 
 export const Index = () => {
 
@@ -31,7 +32,10 @@ export const Index = () => {
 
 
     return (
-        <div className="m-w-xl">
+        loading
+        ? <Loader/>
+        : <div className="m-w-xl">
+            <h2 className="novedades m-w-900 mb-20 text-2xl mt-5">Novedades Destacadas</h2>
             <Carousel indicators={false} controls={false} className='mb-20 mt-50 m-w-900'>
 
                 {products.map((prod) => <Carousel.Item key={prod.id} interval={2000} >

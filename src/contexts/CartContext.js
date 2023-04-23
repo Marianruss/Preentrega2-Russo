@@ -15,7 +15,6 @@ export const Cart = ({ children }) => {
         setCart(cart.filter((prod) => prod.id !== id))
         setQuantity(quantity - 1)
         setTotal(total - price)
-        console.log(total)
     }
 
     const emptyCart = () =>{
@@ -36,9 +35,6 @@ export const Cart = ({ children }) => {
             setTotal(total + item.price)
             setCart([...cart, item])
             setQuantity(quantity + 1)
-            
-            console.log(total)
-            console.log(quantity)
         }
     }
 

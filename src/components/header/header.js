@@ -1,6 +1,6 @@
 import { Games } from "../menus/games"
 import { Colectibles } from "../menus/colectibles"
-import { CartWidget } from "../utils/cartWidget"
+import { CartWidget } from "../header/cart/cartWidget"
 import "../../css/header-styles.css"
 import { Link } from "react-router-dom"
 

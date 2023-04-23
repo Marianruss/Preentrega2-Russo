@@ -1,5 +1,6 @@
 import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { GenerateReceipt } from '../checkout/receipt/generatePdf';
 
 export const ModalWin = ({title,message,factura}) => {
 

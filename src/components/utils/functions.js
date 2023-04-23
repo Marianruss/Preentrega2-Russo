@@ -3,7 +3,7 @@ export const productData = (arr) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(arr.games)
-        }, 1000);
+        }, 700);
     })
 }
 

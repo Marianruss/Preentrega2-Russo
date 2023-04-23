@@ -2,9 +2,9 @@
 import { CartContext } from "../../contexts/CartContext"
 import { ModalWin } from "../utils/modal"
 import { useContext } from "react"
-import { MyDocument } from "../utils/generatePdf"
+
 import { pdf } from "@react-pdf/renderer"
-import { GenerateReceipt } from "../utils/generatePdf"
+import { GenerateReceipt } from "./receipt/generatePdf"
 
 export const PurchaseFinished = () =>{
 

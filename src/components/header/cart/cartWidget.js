@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faX } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState, useContext } from 'react'
-import { CartContext } from '../../contexts/CartContext'
-import { setLogo } from './functions'
+import { CartContext } from '../../../contexts/CartContext'
+import { setLogo } from '../../utils/functions'
 import { Link } from "react-router-dom";
 
 

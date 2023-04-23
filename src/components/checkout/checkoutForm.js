@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { useContext, useState } from "react"
 import { CartContext } from "../../contexts/CartContext"
 import { DataContext } from "../../contexts/DataContext"
-import { ClientDetails, MyDocument } from "../utils/generatePdf"
+import { ClientDetails, MyDocument } from "./receipt/generatePdf"
 
 
 
@@ -18,18 +18,21 @@ export const Form = () => {
     const [direccion,setDireccion] = useState("")
     const [ciudad,setCiudad] = useState("")
     const [codigoPostal,setCodigoPostal] = useState("")
+    const [provincia,setProvincia] = useState("")
 
     const handleSubmit = () =>{
         let data = {
-            name:{nombre},
-            email:{mail},
-            address:{direccion},
-            city:{ciudad},
-            postal:{codigoPostal}
+            nombre,
+            mail,
+            direccion,
+            ciudad,
+            codigoPostal,
+            provincia
+
 
         }
         saveFormData(data)
-        console.log(data)
+        // console.log(data)
     }
     
 
@@ -70,7 +73,7 @@ export const Form = () => {
                     <label className="block text-white font-card mb-2" htmlFor="state">
                         Estado:
                     </label>
-                    <input className="shadow appearance-none border rounded w-300 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="state" name="state" type="text" placeholder="Estado" required />
+                    <input onChange={(e) => setProvincia(e.target.value)} className="shadow appearance-none border rounded w-300 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="state" name="state" type="text" placeholder="Estado" required />
                 </div>
 
                 <div className="mb-4">

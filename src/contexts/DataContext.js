@@ -2,13 +2,13 @@ import { createContext, useContext, useState } from "react";
 
 export const DataContext = createContext()
 
-export const Data = ({children}) =>{
+export const Data = ({ children }) => {
 
-    const [datos,changeDatos] = useState("")
+    const [datos, changeDatos] = useState("")
 
-    const saveFormData = (data) =>{
-        changeDatos({...data})
-        console.log(datos)
+    const saveFormData = (data) => {
+        changeDatos({ ...data })
+        // console.log(datos)
     }
 
 

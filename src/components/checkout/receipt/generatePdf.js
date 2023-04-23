@@ -58,33 +58,27 @@ const styles = StyleSheet.create({
 });
 
 
-const ordenCompra = () => {
-    let min = Math.ceil(1111);
-    let max = Math.floor(9999);
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-let orderNumber
-orderNumber = ordenCompra()
 
 
-export const GenerateReceipt = () => {
+export const GenerateReceipt = (orderNumber) => {
 
-    const { cart, total } = useContext(CartContext)
+    const { cart, total, renewOrderNumber } = useContext(CartContext)
     const { datos } = useContext(DataContext)
     const data = datos
 
     const lineJump = "\n\n"
 
-
+    let ordenCompra = renewOrderNumber()
+    
 
     return (
 
         <div>
-            <PDFDownloadLink className="text-white" fileName={`Factura orden #${orderNumber}`} document={<Document >
+            <PDFDownloadLink className="text-white" fileName={`Factura orden #${ordenCompra}`} document={<Document >
                 <Page size="A4" style={styles.page}>
 
                     <Text style={styles.title}>
-                        Factura compra orden #{orderNumber}
+                        Factura compra orden #{ordenCompra}
                     </Text>
 
                     <Text style={styles.data}>
@@ -96,12 +90,9 @@ export const GenerateReceipt = () => {
 
                     {cart.map((item) => <Text style={styles.prod} key={item.id}>{item.name}  ${item.price}</Text>)}
 
-
-
                     <Text style={styles.total}>
                         Total: ${total}
                     </Text>
-
 
                     <View style={styles.footerDiv}>
                         <Text style={styles.footerText}>
@@ -113,13 +104,9 @@ export const GenerateReceipt = () => {
                         </Text>
                     </View>
 
-
-
-
-
                 </Page>
             </Document>}>
-                {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Descargar Factura')}
+                {({ blob, url, loading, error }) => (loading ? 'Cargando' : 'Descargar Factura')}
             </PDFDownloadLink>
         </div>
     )

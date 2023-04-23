@@ -23,6 +23,12 @@ export const Cart = ({ children }) => {
         setTotal(0)
     }
 
+    const renewOrderNumber = () =>{
+        let min = Math.ceil(1111);
+        let max = Math.floor(9999);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
 
 
     const addToCart = (item) => {
@@ -46,7 +52,8 @@ export const Cart = ({ children }) => {
             quantity,
             deleteFromCart,
             emptyCart,
-            total
+            total,
+            renewOrderNumber
         }}>
             {children}
         </CartContext.Provider>

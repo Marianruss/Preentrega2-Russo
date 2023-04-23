@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         right: "0",
         top: "100",
         position: "absolute",
-        fontSize:"10px"
+        fontSize: "10px"
     },
     link: {
         color: "blue"
@@ -79,7 +79,7 @@ export const GenerateReceipt = () => {
     return (
 
         <div>
-            <PDFDownloadLink fileName={`Factura orden #${orderNumber}`} document={<Document >
+            <PDFDownloadLink className="text-white" fileName={`Factura orden #${orderNumber}`} document={<Document >
                 <Page size="A4" style={styles.page}>
 
                     <Text style={styles.title}>
@@ -108,6 +108,7 @@ export const GenerateReceipt = () => {
                             Telefono: 1122334455{lineJump}
                             Email: <a style={styles.link} href="mailto:mail@mail.com"><Text>mail@mail.com</Text></a>{lineJump}
                             Facebook: <a style={styles.link} href="www.Facebook.com"><Text>Geekers</Text></a>{lineJump}
+                            Instagram: <a style={styles.link} href="www.instagram.com"><Text>Geekers</Text></a>
                         </Text>
                     </View>
 

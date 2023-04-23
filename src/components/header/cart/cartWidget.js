@@ -20,7 +20,7 @@ export const CartWidget = () => {
             <span className="cart-button">
                 <div className='cart-icon'>
 
-                    <Link to={"/cart"}><FontAwesomeIcon icon={faShoppingCart} /></Link>
+                    <FontAwesomeIcon icon={faShoppingCart} />
                     <p>{quantity}</p>
                 </div>
 

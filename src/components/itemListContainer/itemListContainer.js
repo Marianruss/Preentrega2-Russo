@@ -7,6 +7,8 @@ import MOCK_DATA from "../../data/MOCK_DATA.json"
 import { useParams } from "react-router-dom"
 import { Loader } from "../utils/loader"
 import { shuffleArray } from "../utils/functions"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "../../firebase/firebaseConfig"
 
 
 
@@ -14,54 +16,50 @@ import { shuffleArray } from "../utils/functions"
 export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([])
-    const [loading,setLoading] = useState([true])
+    const [loading, setLoading] = useState([true])
     const { category, subcategory } = useParams()
 
 
     useEffect(() => {
         setLoading(true)
-        productData(MOCK_DATA)
+        // productData(MOCK_DATA)
 
+        const prodsRef = collection(db, "productos")
+
+        getDocs(prodsRef)
+        const q = query(prodsRef, where("category","==", category), where("subcategory", "==", subcategory))
+        getDocs(q)
             .then((res) => {
-                if (category && !subcategory) {
-                    setLoading(false)
-                    {
-                        setProducts(res.filter((prod) => prod.category === category))
-                    }
-                }
-                else if (category && subcategory) {
-                    setLoading(false)
-                    {
-                        setProducts(res.filter((prod) => prod.category === category && prod.subcategory === subcategory))
-                    }
-                }
+                // setProducts(res.docs.filter((doc) => doc.category === category && doc.subcategory === subcategory))
 
-                else {
-                    setLoading(false)
-                    setProducts(res)
-                    
-                }
+                setProducts(res.docs.map((doc) => {
+                    return{
+                        id: doc.id,
+                        ...doc.data()
+                    }          
+                }))
             })
             .finally(() => {
                 setLoading(false)
             })
-    }, [category,subcategory])
+
+    }, [category, subcategory])
 
 
 
 
     return (
         loading
-        ? <Loader/>
-        : <div>
-            <div className=' grid grid-cols-1 gap-y-10  md:grid-cols-2 mt-10'>
+            ? <Loader />
+            : <div>
+                <div className=' grid grid-cols-1 gap-y-10  md:grid-cols-2 mt-10'>
 
-                {products.map((prod) => <Product key={prod.id} item={prod} />)}
+                    {products.map((prod) => <Product key={prod.id} item={prod} />)}
+                </div>
+                <div className="grid grid-cols-1 gap-y-10  md:grid-cols-1 mb-10">
+
+                </div>
             </div>
-            <div className="grid grid-cols-1 gap-y-10  md:grid-cols-1 mb-10">
-        
-            </div>
-        </div>
     )
 
 

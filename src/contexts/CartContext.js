@@ -10,11 +10,12 @@ export const Cart = ({ children }) => {
     const [cart, setCart] = useState([])
     const [quantity, setQuantity] = useState(0)
     const [total,setTotal] = useState(0)
+    const [totalUnidades,setTotalUnidades] = useState(0)
 
-    const deleteFromCart = (id,price) => {
+    const deleteFromCart = (id,totalCompra) => {
         setCart(cart.filter((prod) => prod.id !== id))
         setQuantity(quantity - 1)
-        setTotal(total - price)
+        setTotal(total - totalCompra)
     }
 
     const emptyCart = () =>{
@@ -31,17 +32,18 @@ export const Cart = ({ children }) => {
 
 
 
-    const addToCart = (item) => {
+    const addToCart = (item,unidades) => {
 
-        if (cart.some((prod) => prod.id === item.id)) {
-            alertify.error('Ya tienes este item en el carrito');
-        }
-        else {
             alertify.success('Item agregado al carrito');
-            setTotal(total + item.price)
             setCart([...cart, item])
             setQuantity(quantity + 1)
+    }
+
+    const checkIfInCart = (item) =>{
+        if (cart.some((prod) => prod.id === item.id)) {
+            return true;
         }
+        else {return false}
     }
 
 
@@ -53,7 +55,9 @@ export const Cart = ({ children }) => {
             deleteFromCart,
             emptyCart,
             total,
-            renewOrderNumber
+            setTotal,
+            renewOrderNumber,
+            checkIfInCart
         }}>
             {children}
         </CartContext.Provider>

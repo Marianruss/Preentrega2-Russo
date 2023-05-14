@@ -4,13 +4,14 @@ import { ModalWin } from "../utils/modal";
 import { Link } from "react-router-dom";
 import { setLogo } from "../utils/functions";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart, faX } from '@fortawesome/free-solid-svg-icons'
+import alertify from 'alertifyjs';
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import 'alertifyjs/build/css/alertify.css';
 
 
 export const CartPage = () => {
 
-    const { total, quantity, cart, deleteFromCart } = useContext(CartContext)
-
+    const { total, quantity, cart, deleteFromCart, unidades, setUnidades } = useContext(CartContext)
 
     return (
 
@@ -27,7 +28,10 @@ export const CartPage = () => {
                                 <div className="d-flex flex-column gap-20 w-150">
                                     <p className="text-white font-card text-s self-center md:text-l">{prod.name}</p>
                                     <img src={`${setLogo(prod.subcategory)}`} className="w-10 h-10 self-center md:w-20 md:h-20 "></img>
-                                    <p className="text-white font-card text-l self-center">${prod.price}</p>
+                                    <p className="d-flex flex-row w-100 text-white text-s justify-center font-card"> Cant: {prod.unidadesCompradas}</p>
+
+                                    <p className="text-white font-card text-l self-center">${prod.price*prod.unidadesCompradas}</p>
+                                    <p></p>
                                 </div>
                                 <span onClick={() => deleteFromCart(prod.id,prod.price)}className=' self-end self-center p-px hover:animate-bounce '><FontAwesomeIcon icon={faX} style={{ color: "white", }} /></span>
                             </div>

@@ -5,9 +5,12 @@ import { useParams } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import { Product } from '../utils/product-card';
 import MOCK_DATA from "../../data/MOCK_DATA.json"
+import { collection, getDocs, query, where } from "firebase/firestore"
 import { productData } from '../utils/functions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Loader } from '../utils/loader';
+import { db } from "../../firebase/firebaseConfig"
+
 
 
 
@@ -23,13 +26,21 @@ export const Ofertas = () => {
     useEffect(() => {
         productData(MOCK_DATA)
 
-            .then((res) => {
-                setOffers(res.filter((prod) => prod.offer === true))
-                setLoading(false)
-            })
+        const prodsRef = collection(db, "productos")
 
-            .catch((err) => {
-                console.log(err)
+        getDocs(prodsRef)
+        const q = query(prodsRef, where("offer", "==", true))
+        getDocs(q)
+            .then((res) => {
+                setOffers(res.docs.map((doc) => {
+                    return {
+                        id: doc.id,
+                        ...doc.data()
+                    }
+                }))
+            })
+            .finally(() => {
+                setLoading(false)
             })
     }, [])
 

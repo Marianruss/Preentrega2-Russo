@@ -20,7 +20,7 @@ export const ProductDetail = ({ item }) => {
 
     return (
         <div className=" container mb-100 grid grid-cols-2 w-100 my-10 md:grid-cols-2 md:gap-y-0 align-center ">
-            <img src={item.photo} className="w-150 h-200 md:w-300 md:h-500 object-contain ml-5" />
+            <img src={`${item.photo}`} className="w-150 h-200 md:w-300 md:h-500 object-contain ml-5" />
             <div className=" d-flex flex-col md:mt-50 row-span-2 h-10 md:gap-y-60 md:w-400">
                 <p className=" text-xl self-center text-white text-base md:text-3xl font-card outline-black mb-10  ">{item.name}</p>
                 <p className="text-white w-180 md:w-auto mb-10 text-xs md:text-xl mr-15 font-card outline-black">{item.description}</p>

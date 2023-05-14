@@ -9,7 +9,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/doom.jpg"
+            "photo": "/images/product-photos/gamepictures/doom.jpg",
+            "stock": 999
         },
         {
             "id": 2,
@@ -20,7 +21,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/plaguetale.jpg"
+            "photo": "/images/product-photos/gamepictures/plaguetale.jpg",
+            "stock": 999
         },
         {
             "id": 3,
@@ -31,7 +33,8 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/sekiro.jpg"
+            "photo": "/images/product-photos/gamepictures/sekiro.jpg",
+            "stock": 999
         },
         {
             "id": 4,
@@ -42,7 +45,8 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/skyrim.jpg"
+            "photo": "/images/product-photos/gamepictures/skyrim.jpg",
+            "stock": 999
         },
         {
             "id": 5,
@@ -53,7 +57,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/godofwar.jfif"
+            "photo": "/images/product-photos/gamepictures/godofwar.jfif",
+            "stock": 999
         },
         {
             "id": 6,
@@ -64,7 +69,8 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/sfv.webp"
+            "photo": "/images/product-photos/gamepictures/sfv.webp",
+            "stock": 999
         },
         {
             "id": 7,
@@ -75,7 +81,8 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/residentevil4.jpg"
+            "photo": "/images/product-photos/gamepictures/residentevil4.jpg",
+            "stock": 999
         },{
             "id": 8,
             "name": "The Witcher 3",
@@ -85,7 +92,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/witcher3.jpg"
+            "photo": "/images/product-photos/gamepictures/witcher3.jpg",
+            "stock": 999
         },{
             "id": 9,
             "name": "Mortal Kombat 11",
@@ -95,7 +103,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/mk11.jpg"
+            "photo": "/images/product-photos/gamepictures/mk11.jpg",
+            "stock": 999
         },{
             "id": 10,
             "name": "Metro exodus",
@@ -105,7 +114,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/metroexodus.jpg"
+            "photo": "/images/product-photos/gamepictures/metroexodus.jpg",
+            "stock": 999
         },{
             "id": 11,
             "name": "Halo collection",
@@ -115,7 +125,8 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/halo.jpg"
+            "photo": "/images/product-photos/gamepictures/halo.jpg",
+            "stock": 999
         },{
             "id": 12,
             "name": "Metal Gear Solid V",
@@ -125,7 +136,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/mgsv.jpg"
+            "photo": "/images/product-photos/gamepictures/mgsv.jpg",
+            "stock": 999
         },{
             "id": 13,
             "name": "Assassin's Creed Valhalla",
@@ -135,7 +147,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/acvalhalla.jpg"
+            "photo": "/images/product-photos/gamepictures/acvalhalla.jpg",
+            "stock": 999
         },{
             "id": 14,
             "name": "Batman Arkham's Knight",
@@ -145,7 +158,8 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/arkhamknight.jpg"
+            "photo": "/images/product-photos/gamepictures/arkhamknight.jpg",
+            "stock": 999
         },{
             "id": 15,
             "name": "Marvel Avengers",
@@ -155,7 +169,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/avengers.jpg"
+            "photo": "/images/product-photos/gamepictures/avengers.jpg",
+            "stock": 999
         },{
             "id": 16,
             "name": "Battlefield V",
@@ -165,7 +180,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/battlefield5.jpg"
+            "photo": "/images/product-photos/gamepictures/battlefield5.jpg",
+            "stock": 999
         },{
             "id": 17,
             "name": "Battlefield 2042",
@@ -175,7 +191,8 @@
             "category": "juegos",
             "offer": true,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/bf2042.jpg"
+            "photo": "/images/product-photos/gamepictures/bf2042.jpg",
+            "stock": 999
         },{
             "id": 18,
             "name": "Brutal Legend",
@@ -185,7 +202,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/brutallegend.jpg"
+            "photo": "/images/product-photos/gamepictures/brutallegend.jpg",
+            "stock": 999
         },{
             "id": 19,
             "name": "Control",
@@ -195,7 +213,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/control.jpg"
+            "photo": "/images/product-photos/gamepictures/control.jpg",
+            "stock": 999
         },{
             "id": 20,
             "name": "Crash N'sane Trilogy",
@@ -205,7 +224,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/crash3.jpg"
+            "photo": "/images/product-photos/gamepictures/crash3.jpg",
+            "stock": 999
         },{
             "id": 21,
             "name": "Death Stranding",
@@ -215,7 +235,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/deathstranding.jpg"
+            "photo": "/images/product-photos/gamepictures/deathstranding.jpg",
+            "stock": 999
         },
         {
             "id": 22,
@@ -226,7 +247,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "pc",
-            "photo": "/images/product-photos/gamepictures/spiderman.jpg"
+            "photo": "/images/product-photos/gamepictures/spiderman.jpg",
+            "stock": 999
         },
         {
             "id": 23,
@@ -237,7 +259,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "playstation",
-            "photo": "/images/product-photos/gamepictures/horizon.jpg"
+            "photo": "/images/product-photos/gamepictures/horizon.jpg",
+            "stock": 999
         },
         {
             "id": 24,
@@ -248,7 +271,8 @@
             "category": "juegos",
             "offer": false,
             "subcategory": "xbox",
-            "photo": "/images/product-photos/gamepictures/eldenring.jpg"
+            "photo": "/images/product-photos/gamepictures/eldenring.jpg",
+            "stock": 999
         },
         {
             "id": 25,
@@ -259,7 +283,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkoazula.jpg"
+            "photo": "/images/product-photos/funkopictures/funkoazula.jpg",
+            "stock": 4
         },
         {
             "id": 26,
@@ -270,7 +295,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkoandromeda.jpg"
+            "photo": "/images/product-photos/funkopictures/funkoandromeda.jpg",
+            "stock": 4
         },
         {
             "id": 27,
@@ -281,7 +307,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkobatman.jpg"
+            "photo": "/images/product-photos/funkopictures/funkobatman.jpg",
+            "stock": 4
         },
         {
             "id": 28,
@@ -292,7 +319,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkoboruto.jpg"
+            "photo": "/images/product-photos/funkopictures/funkoboruto.jpg",
+            "stock": 4
         },
         {
             "id": 29,
@@ -303,7 +331,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkocapitan.jpg"
+            "photo": "/images/product-photos/funkopictures/funkocapitan.jpg",
+            "stock": 4
         },
         {
             "id": 30,
@@ -314,7 +343,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkocell.jpg"
+            "photo": "/images/product-photos/funkopictures/funkocell.jpg",
+            "stock": 4
         },
         {
             "id": 31,
@@ -325,7 +355,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkodeadpool.png"
+            "photo": "/images/product-photos/funkopictures/funkodeadpool.png",
+            "stock": 4
         },
         {
             "id": 32,
@@ -336,7 +367,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkogeralt.jpg"
+            "photo": "/images/product-photos/funkopictures/funkogeralt.jpg",
+            "stock": 4
         },
         {
             "id": 33,
@@ -347,7 +379,8 @@
             "category": "coleccionables",
             "offer": true,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkosuperman.jpg"
+            "photo": "/images/product-photos/funkopictures/funkosuperman.jpg",
+            "stock": 4
         },
         {
             "id": 34,
@@ -358,7 +391,8 @@
             "category": "coleccionables",
             "offer": true,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkogollum.jpg"
+            "photo": "/images/product-photos/funkopictures/funkogollum.jpg",
+            "stock": 4
         },
         {
             "id": 35,
@@ -369,7 +403,8 @@
             "category": "coleccionables",
             "offer": true,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkovegeta.jpg"
+            "photo": "/images/product-photos/funkopictures/funkovegeta.jpg",
+            "stock": 4
         },
         {
             "id": 36,
@@ -380,7 +415,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "funkos",
-            "photo": "/images/product-photos/funkopictures/funkoharry.jpg"
+            "photo": "/images/product-photos/funkopictures/funkoharry.jpg",
+            "stock": 4
         },
         {
             "id": 37,
@@ -391,7 +427,8 @@
             "category": "coleccionables",
             "offer": true,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/goku-niño.jpg"
+            "photo": "/images/product-photos/figurepictures/goku-niño.jpg",
+            "stock": 4
         },
         {
             "id": 38,
@@ -402,7 +439,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/cell.webp"
+            "photo": "/images/product-photos/figurepictures/cell.webp",
+            "stock": 4
         },
         {
             "id": 39,
@@ -413,7 +451,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/freezer.webp"
+            "photo": "/images/product-photos/figurepictures/freezer.webp",
+            "stock": 4
         },
         {
             "id": 40,
@@ -424,7 +463,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/gohanssj2.jpg"
+            "photo": "/images/product-photos/figurepictures/gohanssj2.jpg",
+            "stock": 4
         },
         {
             "id": 41,
@@ -435,7 +475,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/gokussj1.webp"
+            "photo": "/images/product-photos/figurepictures/gokussj1.webp",
+            "stock": 4
         },
         {
             "id": 42,
@@ -446,7 +487,8 @@
             "category": "coleccionables",
             "offer": true,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/krillin.webp"
+            "photo": "/images/product-photos/figurepictures/krillin.webp",
+            "stock": 4
         },
         {
             "id": 43,
@@ -457,7 +499,8 @@
             "category": "coleccionables",
             "offer": true,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/midoriya.webp"
+            "photo": "/images/product-photos/figurepictures/midoriya.webp",
+            "stock": 4
         },
         {
             "id": 44,
@@ -468,7 +511,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/naruto.jpg"
+            "photo": "/images/product-photos/figurepictures/naruto.jpg",
+            "stock": 4
         },
         {
             "id": 45,
@@ -479,7 +523,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/narutoadulto.webp"
+            "photo": "/images/product-photos/figurepictures/narutoadulto.webp",
+            "stock": 4
         },
         {
             "id": 46,
@@ -490,7 +535,8 @@
             "category": "coleccionables",
             "offer": true,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/sauron.jpg"
+            "photo": "/images/product-photos/figurepictures/sauron.jpg",
+            "stock": 4
         },
         {
             "id": 47,
@@ -501,7 +547,8 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/shenlong.jpg"
+            "photo": "/images/product-photos/figurepictures/shenlong.jpg",
+            "stock": 4
         },
         {
             "id": 48,
@@ -512,17 +559,9 @@
             "category": "coleccionables",
             "offer": false,
             "subcategory": "figuras",
-            "photo": "/images/product-photos/figurepictures/vegeta.jpg"
+            "photo": "/images/product-photos/figurepictures/vegeta.jpg",
+            "stock": 4
         }
-        
-
-
-
-
-
-
-
-
 
     ]
 }

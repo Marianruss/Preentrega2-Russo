@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart, faX } from '@fortawesome/free-solid-svg-icons'
+import { faHandsAmericanSignLanguageInterpreting, faShoppingCart, faX } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState, useContext } from 'react'
 import { CartContext } from '../../../contexts/CartContext'
 import { setLogo } from '../../utils/functions'
 import { Link } from "react-router-dom";
+import {ModalWin} from "../../utils/modal"
+import { CartModal } from './cartModal'
 
 
 
@@ -12,6 +14,7 @@ import { Link } from "react-router-dom";
 export const CartWidget = () => {
 
     const { cart, quantity, deleteFromCart, emptyCart } = useContext(CartContext)
+    console.log(cart)
 
     return (
         <div className="cart">
@@ -36,12 +39,16 @@ export const CartWidget = () => {
                                             <img className='w-15 h-15' src={`${setLogo(item.subcategory)}`}/>
                                             <h6 className='text-xs'>{item.name}</h6>
                                         </div>
-                                        <small className='text-xs'>${item.price}</small>
+                                        
+                                        <div className='text-xs'>
+                                            X{item.unidadesCompradas}
+                                        </div>
                                         <span onClick={() => deleteFromCart(item.id,item.price)} className=' w-30 p-px hover:animate-bounce'><FontAwesomeIcon icon={faX} style={{ color: "black", }} /></span>
                                     </div>
                                 </div>))}
                             <div className='d-flex flex-row justify-between mt-20 '>
-                                <button onClick={emptyCart} className="bg-amber-300 hover:bg-grey-500 rounded-xl w-32 p-1 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300 ">Vaciar carrito</button>
+                                <button onClick={emptyCart} className="bg-red-600 hover:bg-grey-500 rounded-xl w-32 p-1 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300 ">Vaciar carrito</button>
+                                
                                 <Link className="bg-amber-300 hover:bg-grey-500 rounded-xl w-32  p-2 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300" to={"/cart"}><button >Ir a pagar</button> </Link>
                             <div/>
                         </div>

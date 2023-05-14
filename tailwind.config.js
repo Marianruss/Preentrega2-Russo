@@ -96,6 +96,9 @@ module.exports = {
         '500': '500px',
         '550': '550px',
         '600': '600px'
+      },
+      backgroundImage:{
+        "jumbotron": "url(/public/images/jumbo-wallpaper.jpg)"
       }
 
     },

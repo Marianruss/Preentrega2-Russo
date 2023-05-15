@@ -28,6 +28,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'white'
     },
     prod: {
+        display: "flex",
+        flexDirection: "row",
         marginLeft: "20px",
         marginTop: "20px",
         borderBottom: "1px",
@@ -54,6 +56,9 @@ const styles = StyleSheet.create({
     footerDiv: {
         display: "flex",
         flexDirection: "row",
+    },
+    unidades: {
+        alignSelf: "flex-end"
     }
 });
 
@@ -67,6 +72,7 @@ export const GenerateReceipt = (orderNumber) => {
     const data = datos
 
     const lineJump = "\n\n"
+    const tab = "    "
 
     let ordenCompra = renewOrderNumber()
 
@@ -87,7 +93,7 @@ export const GenerateReceipt = (orderNumber) => {
                         CP: {data.codigoPostal}{lineJump}
                     </Text>
 
-                    {cart.map((item) => <Text style={styles.prod} key={item.id}>{item.name}  ${item.price}</Text>)}
+                    {cart.map((item) => <Text style={styles.prod} key={item.id}>{item.name}  ${item.price} {tab} {tab}Cant: {item.unidadesCompradas} {tab}{tab} Total: ${item.unidadesCompradas*item.price}</Text>)}
 
                     <Text style={styles.total}>
                         Total: ${total}

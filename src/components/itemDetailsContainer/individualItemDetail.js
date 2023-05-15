@@ -1,18 +1,43 @@
 import { useContext, useState, useEffect } from "react"
 import { CartContext } from "../../contexts/CartContext"
 import { setLogo } from "../utils/functions"
+import alertify from "alertifyjs"
+import { Link } from "react-router-dom"
+
 
 
 export const ProductDetail = ({ item }) => {
 
-    const { addToCart } = useContext(CartContext)
+    const { addToCart, checkIfInCart, total, setTotal } = useContext(CartContext)
 
+    const [unidades, setUnidades] = useState(0)
     const [cantidad] = useState(1)
+
+    const handleSumar = () => {
+        if (unidades === item.stock) {
+            alertify.error("No tenemos stock para cubrir tu orden")
+        }
+        else {
+            setUnidades(unidades + 1)
+        }
+    }
+
+    const handleRestar = () => {
+        if (unidades === 0) {
+            alertify.error("Ya tienes cero items")
+        }
+        else {
+            setUnidades(unidades - 1)
+        }
+    }
+
 
     const handleAgregar = () => {
         const newItem = {
             ...item,
-            cantidad
+            "unidadesCompradas": unidades,
+            cantidad,
+            "totalCompra": item.price * unidades
         }
 
         addToCart(newItem)
@@ -27,8 +52,24 @@ export const ProductDetail = ({ item }) => {
             </div>
             <div className="md:w-330 d-flex flex-col mt-20  justify-between items-center gap-y-20 md:mt-0 ">
                 <p className="text-white font-card text-2xl">${item.price}</p>
-                <img className="w-30 h-30" src={`${setLogo(item.subcategory)}`}/>
-                <button onClick={handleAgregar} className="mb-60 w-32 h-12 bg-amber-300 hover:bg-grey-500 rounded-xl w-32 p-1 mb-10 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300 mr-10 md:w-300 md:h-50">Agregar al carro</button>
+                <img className="w-30 h-30" src={`${setLogo(item.subcategory)}`} />
+                {checkIfInCart(item) === true
+                    ? <div>
+                        <p className='d-flex text-s justify-center text-white font-card mb-20'>
+                            En tu carrito
+                        </p>
+                        <Link to={"/cart"}><button className="bg-amber-300 hover:bg-grey-500 rounded-xl w-32 p-1 mb-10 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300 ">Ir al carrito</button></Link>
+                    </div>
+                    : <div>
+                        <div className='d-flex justify-center mb-20 flex-row gap-15 text-white'>
+                            <button onClick={handleRestar}>-</button>
+                            <p>{unidades}</p>
+                            <button onClick={handleSumar}>+</button>
+                        </div>
+                        <button onClick={handleAgregar} className="bg-amber-300 hover:bg-grey-500 rounded-xl w-32 p-1 mb-10 font-card hover:text-white hover:bg-gray-500 hover:border-gray-300 duration-300 ">Añadir al carro</button>
+
+                    </div>
+                }
             </div>
 
 

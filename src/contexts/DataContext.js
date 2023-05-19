@@ -5,6 +5,7 @@ export const DataContext = createContext()
 export const Data = ({ children }) => {
 
     const [datos, changeDatos] = useState("")
+    const [submitted,setSubmitted] = useState(false)
 
     const saveFormData = (data) => {
         changeDatos({ ...data })
@@ -16,6 +17,8 @@ export const Data = ({ children }) => {
         <DataContext.Provider value={{
             datos,
             saveFormData,
+            submitted,
+            setSubmitted
         }}>
             {children}
         </DataContext.Provider>

@@ -14,7 +14,6 @@ import { CartModal } from './cartModal'
 export const CartWidget = () => {
 
     const { cart, quantity, deleteFromCart, emptyCart } = useContext(CartContext)
-    console.log(cart)
 
     return (
         <div className="cart">

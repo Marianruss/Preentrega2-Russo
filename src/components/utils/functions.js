@@ -1,3 +1,5 @@
+import alertify from "alertifyjs";
+
 
 export const productData = (arr) => {
     return new Promise((resolve, reject) => {
@@ -34,7 +36,21 @@ export const setLogo = (subcat) => {
     return logo
 }
 
+export function containsNumbers(str) {
+    return /\d/.test(str);
+}
 
+export const checkSubmit = (nombre,mail,direccion,ciudad,provincia,codigoPostal) =>{
+    if (nombre.length == 0 || containsNumbers(nombre) === true){
+        alertify.alert("Ingresá un nombre valido")
+    }
+    else if (mail.length == 0 || mail.includes("@") === false || mail.includes(".com") === false){
+        alertify.alert("Ingresá un mail valido")
+    }
+    else if (direccion.length == 0){
+        alertify.alert("Ingresá una dirección valida")
+    }
+}
 
 
 export function shuffleArray(array) {

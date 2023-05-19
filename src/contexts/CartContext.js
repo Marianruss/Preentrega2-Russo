@@ -9,41 +9,48 @@ export const Cart = ({ children }) => {
 
     const [cart, setCart] = useState([])
     const [quantity, setQuantity] = useState(0)
-    const [total,setTotal] = useState(0)
-    const [totalUnidades,setTotalUnidades] = useState(0)
+    const [total, setTotal] = useState(0)
+    const [totalUnidades, setTotalUnidades] = useState(0)
+    const [isOrder, setIsOrder] = useState(false)
 
-    const deleteFromCart = (id,totalCompra) => {
+    const deleteFromCart = (id, totalCompra) => {
         setCart(cart.filter((prod) => prod.id !== id))
         setQuantity(quantity - 1)
         setTotal(total - totalCompra)
     }
 
-    const emptyCart = () =>{
+    const emptyCart = () => {
         setCart([])
         setQuantity(0)
         setTotal(0)
     }
 
-    const renewOrderNumber = () =>{
+    
+
+    const renewOrderNumber = () => {
+        
+        if (!isOrder) {
         let min = Math.ceil(1111);
         let max = Math.floor(9999);
-        return Math.floor(Math.random() * (max - min + 1) + min);
+        setIsOrder(true)
+        return Math.floor(Math.random() * (max - min + 1) + min);}}
+            
+    
+
+
+
+    const addToCart = (item) => {
+
+        alertify.success('Item agregado al carrito');
+        setCart([...cart, item])
+        setQuantity(quantity + 1)
     }
 
-
-
-    const addToCart = (item,unidades) => {
-
-            alertify.success('Item agregado al carrito');
-            setCart([...cart, item])
-            setQuantity(quantity + 1)
-    }
-
-    const checkIfInCart = (item) =>{
+    const checkIfInCart = (item) => {
         if (cart.some((prod) => prod.id === item.id)) {
             return true;
         }
-        else {return false}
+        else { return false }
     }
 
 
@@ -57,7 +64,8 @@ export const Cart = ({ children }) => {
             total,
             setTotal,
             renewOrderNumber,
-            checkIfInCart
+            checkIfInCart,
+            setIsOrder
         }}>
             {children}
         </CartContext.Provider>

@@ -36,12 +36,17 @@ export const Product = ({ item }) => {
         if (unidades === 0) {
             alertify.error("Ya tienes cero items")
         }
+        
         else {
             setUnidades(unidades - 1)
         }
     }
 
     const handleAgregar = () => {
+        if (unidades === 0){
+            alertify.error("No puedes comprar cero items")
+            return
+        }        
         const newItem = {
             ...item,
             "unidadesCompradas": unidades,

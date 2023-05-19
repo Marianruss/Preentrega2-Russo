@@ -3,13 +3,12 @@ import { ItemListContainer } from './components/itemListContainer/itemListContai
 import { ItemDetails } from './components/itemDetailsContainer/itemDetailsContainer';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { CartPage } from './components/cartListContainer/finalCart';
-import { Index } from './components/index';
+import { Index } from './components/index/index';
 import 'alertifyjs/build/css/alertify.css';
 import { PurchaseFinished } from './components/checkout/checkoutSuccess';
 import { Footer } from './components/footer/footer';
 import { Checkout } from './components/checkout/checkout';
 import { ModalSorteo } from './components/utils/modalSorteo';
-import { Modal } from 'react-bootstrap';
 
 
 function App() {

@@ -1,7 +1,7 @@
-import MOCK_DATA from "../data/MOCK_DATA.json" assert {type: 'json'}
+import { useContext } from "react";
 
 import { initializeApp } from "firebase/app";
-import {getFirestore, collection, addDoc} from "firebase/firestore"
+import {getFirestore, collection, addDoc, QueryCompositeFilterConstraint} from "firebase/firestore"
 
 
 
@@ -14,17 +14,12 @@ const firebaseConfig = {
     appId: "1:478003214910:web:d1f0d826ee290bdfa1ef6f"
 };
 
+
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
 
 
-const prodsRef = collection(db, "productos")
+const prodsRef = collection(db, "orders")
 
 
-MOCK_DATA.games.forEach((item) => {
-    delete item.id
-    addDoc(prodsRef,item)
-});
 
-
-console.log(MOCK_DATA)

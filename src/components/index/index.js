@@ -10,12 +10,19 @@ import { collection, getDocs, query, where } from "firebase/firestore"
 import { Loader } from "../utils/loader";
 import { db } from "../../firebase/firebaseConfig"
 import { Jumbo } from "../utils/jumbotron"
+import { useContext } from "react"
+import { DataContext } from "../../contexts/DataContext"
+import { CartContext } from "../../contexts/CartContext"
 
 export const Index = () => {
 
-    const [products, setProducts] = useState([])
+    const {submitted,setSubmitted} = useContext(DataContext)
+    const {setIsOrder} = useContext(CartContext)
+    const [products, setProducts] = useState([])    
     const { category, subcategory } = useParams()
     const [loading, setLoading] = useState(true)
+    setSubmitted(false)
+    // setIsOrder(false)
 
     useEffect(() => {
         setLoading(true)
